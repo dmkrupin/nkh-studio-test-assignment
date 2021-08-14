@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание для компании NKH Studio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--
+  todo:
+1. убрать section
+2. p превратить в h2
+3. отцентровать контент
+4. добавить рамки к заданиям
+5. подключить less и gulp(grunt?)
+6. переписать css
+7. залить на github
+8. собрать на gh actions
+-->
+
+<body>
+  <h1 class="main-title">Тестовое задание для компании NKH Studio</h1>
+  <ul class="test-task">
+    <li class="test-task__item">
+      <p class="test-task__title">Cоздать сетку каталога состоящую из 4х колонок и 2 рядов с помощью flex</p>
+      <div class="catalog">
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+      </div>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Поменять направление осей с дефолтного состояния</p>
+      <div class="catalog catalog--2">
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+        <div class="catalog__item"></div>
+      </div>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Выравнить один элемент по поперечней оси</p>
+      <section class="test-task__contents">
+        <div class="catalog catalog--2">
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item catalog__item--3"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+        </div>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Задать выравнивание ряду flex-end</p>
+      <section class="test-task__contents">
+        <div class="catalog catalog--4">
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+        </div>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью inline-block</p>
+      <section class="test-task__contents">
+        <div class="catalog catalog--5">
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+        </div>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Создать сетку каталога состоящую из 4х колонок и 2 рядов с помощью float</p>
+      <section class="test-task__contents">
+        <div class="catalog catalog--6">
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+          <div class="catalog__item"></div>
+        </div>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Создать html таблицу из двух рядов и 4 ячеек</p>
+      <section class="test-task__contents">
+        <table class="catalog catalog--7">
+          <tr>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+          </tr>
+          <tr>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+            <td class="catalog__item catalog__item--table"></td>
+          </tr>
+        </table>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Создать таблицу из двух рядов и 4 ячеек используя для разметки только div</p>
+      <section class="test-task__contents">
+        <div class="catalog catalog--8">
+          <div class="catalog__row">
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+          </div>
+          <div class="catalog__row">
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+          </div>
+        </div>
+      </section>
+    </li>
+    <li class="test-task__item">
+      <p class="test-task__title">Сделать обыкновенный аккордеон. Не важно JS или JQUERY, но обязательно с нуля.</p>
+      <section class="test-task__contents">
+        <div class="accordion">
+          <button class="accordion__link">Заголовок 1</button>
+          <div class="accordion__contents">Lorem ipsum dolor sit amet.</div>
+          <button class="accordion__link">Заголовок 2</button>
+          <div class="accordion__contents">Lorem ipsum dolor sit amet.</div>
+          <button class="accordion__link">Заголовок 3</button>
+          <div class="accordion__contents">Lorem ipsum dolor sit amet.</div>
+          <button class="accordion__link">Заголовок 4</button>
+          <div class="accordion__contents">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </section>
+    </li>
+  </ul>
+  <script src="script.js"></script>
+</body>
+</html>

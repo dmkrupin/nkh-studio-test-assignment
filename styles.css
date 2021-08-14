@@ -1,0 +1,114 @@
+:root {
+  --catalog__item-size: 50px;
+  --items-number: 8;
+  --items-per-row: 4;
+  /* gap для flexbox поддерживается не во всех браузерах */
+  --flex-gap: 10px;
+}
+
+
+.catalog {
+  width:
+    calc(var(--catalog__item-size) * var(--items-per-row) + var(--flex-gap) * 3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--flex-gap);
+  border: 1px solid #000;
+  background-color: lightgray;
+  padding: var(--flex-gap);
+}
+.catalog__item {
+  width: var(--catalog__item-size);
+  height: var(--catalog__item-size);
+  box-sizing: border-box;
+  background-color: plum;
+  border: 1px solid #000;
+}
+
+
+.catalog--2 {
+  flex-direction: column;
+  height:
+    calc(var(--catalog__item-size) * var(--items-per-row) + var(--flex-gap) * 3);
+}
+.catalog__item--3 {
+  align-self: flex-start;
+}
+.catalog--4 {
+  flex-direction: column;
+  height:
+    calc(var(--catalog__item-size) * var(--items-per-row) + var(--flex-gap) * 3);
+    align-items: flex-end;
+  }
+.catalog--5 {
+  display: block;
+  font-size: 0;
+  padding: var(--flex-gap) var(--flex-gap) 0;
+}
+.catalog--5 > .catalog__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: var(--flex-gap);
+  margin-bottom: var(--flex-gap);
+}
+.catalog--5 > .catalog__item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog--6 {
+  display: block;
+  padding: var(--flex-gap) var(--flex-gap) 0;
+}
+.catalog--6::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.catalog--6 > .catalog__item {
+  float:left;
+  margin-right: var(--flex-gap);
+  margin-bottom: var(--flex-gap);
+}
+.catalog--6 > .catalog__item:nth-child(4n) {
+  margin-right: 0;
+}
+.catalog--7 {
+  width:
+  calc(var(--catalog__item-size) * var(--items-per-row) + var(--flex-gap) * 5);
+  border-spacing: var(--flex-gap);
+  padding: 0;
+}
+.catalog__item--table {
+  padding: 0;
+}
+.catalog--8 {
+  display: table;
+  border-spacing: var(--flex-gap);
+  padding: 0;
+  width:
+    calc(var(--catalog__item-size) * var(--items-per-row) + var(--flex-gap) * 5);
+}
+.catalog__row {
+  display: table-row;
+}
+.catalog--8 .catalog__item {
+  display: table-cell;
+}
+
+.accordion__link {
+  background-color: plum;
+  border: 1px solid #000;
+  width: calc(var(--catalog__item-size) * 2);
+  height: calc(var(--catalog__item-size) / 2);
+}
+.accordion__link:hover, .active {
+  background-color: tomato;
+}
+.accordion__contents {
+  width: calc(var(--catalog__item-size) * 4);
+  height: var(--catalog__item-size);
+  background-color: lightgray;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
