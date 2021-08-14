@@ -8,7 +8,7 @@ for (i = 0; i < acc.length; i++) {
     if (contents.style.maxHeight){
       contents.style.maxHeight = null;
     } else {
-      contents.style.maxHeight = 30 + "px";
+      contents.style.maxHeight = 40 + "px";
     }
   });
 }
