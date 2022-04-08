@@ -1,4 +1,5 @@
 # nkh-studio-test-assignment
+[смотреть страницу](https://dmkrupin.github.io/nkh-studio-test-assignment/)
 ## Тестовое задание для компании NKH Studio
 
 _Вся разметка должна быть написана по БЭМ. Работу залить на github репозиторий > сделать его публичным > опубликовать страницу на github pages > дать ссылку на работу._
